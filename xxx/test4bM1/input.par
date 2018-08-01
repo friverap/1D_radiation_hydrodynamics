@@ -1,0 +1,39 @@
+&RHD_Input
+jobname		       = "The Radiation Pressure-dominated Shock Test (M1 optically thick)"
+n_cores            = 4
+res_num	           = 1
+nvarsHyd           = 3
+nvarsRad           = 2
+g_pts	           = 0
+ngroups            = 1
+xmin 		       = -20.0
+xmax 		       = 20.0
+Nxx 		       = 800    
+Ntt 		       = 1000000
+courant 	       = 0.1
+amplitude          = 1.e-5
+x0                 = 0.0
+every_0Dt  	       = 1
+every_1Dt  	       = 1000
+gamma              = 1.666666667
+Floor              = 1.e-10
+Floorrad           = 1.0e-10
+rho_iniL           = 1.0
+rho_iniR           = 3.65
+p_iniL             = 6.0e-3
+p_iniR             = 3.59e-2
+vx_iniL            = 0.567925279738123
+vx_iniR            = 0.185712190755838
+Er_iniL            = 0.18
+opacity_a          = 0.7
+opacity_s          = 0.0
+eos_type           = 'id'            !id, tm
+close_type         = 'M1'            !dif, M1
+rad_type           = 'GB'            ! GB, MG
+Limiter            = 'MC_TVD'        ! minmod_TVD, MC_TVD
+Riemann            = 'hlle'          ! hlle
+num_det            = 0
+initial_det        = 10
+space_between_det  = 10.
+/
+

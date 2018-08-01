@@ -1,0 +1,39 @@
+&RHD_Input
+jobname            = "The Non-relativistic Strong Shock Test (M1)"
+n_cores            = 4
+res_num	           = 1
+nvarsHyd           = 3
+nvarsRad           = 2
+g_pts	           = 0
+ngroups            = 1
+xmin 		       = -20.0
+xmax 		       = 20.0
+Nxx 		       = 800 !3200    
+Ntt 		       = 400000 !1600000
+courant 	       = 0.25
+amplitude          = 1.e-5
+x0                 = 0.0
+every_0Dt  	       = 1
+every_1Dt  	       = 1000 !20000
+gamma              = 1.666666667
+Floor              = 1.e-8
+Floorrad           = 1.0e-12
+rho_iniL           = 1.0
+rho_iniR           = 2.4
+p_iniL             = 3.0e-5
+p_iniR             = 1.61e-4
+vx_iniL            = 0.0149983127847122
+vx_iniR            = 0.00624987793326366
+Er_iniL            = 1.0e-8
+opacity_a          = 0.4
+opacity_s          = 0.0
+eos_type           = 'id'    !id, tm
+close_type         = 'M1'   !dif, M1
+rad_type           = 'GB'            ! GB, MG
+Limiter            = 'MC_TVD'    ! minmod_TVD, MC_TVD
+Riemann            = 'hlle'          ! hlle
+num_det            = 0
+initial_det        = 10
+space_between_det  = 10.
+/
+
